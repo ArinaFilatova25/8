@@ -25,7 +25,6 @@ void quicksort(int *arr,int first,int last)
 
         }
         if (i != p_ind && i < j)
-
             sravn++;
 
 
@@ -42,15 +41,15 @@ void quicksort(int *arr,int first,int last)
 
         if (i <= j)
         {
+
+            if (i != j)
             {
                 t=arr[j];
                 arr[j]=arr[i];
                 arr[i]=t;
+                perest++;
             }
 
-
-            if (i != j)
-                perest++;
             i++;
             j--;
 
